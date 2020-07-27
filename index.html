@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joke</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+<div class = "body">
+    <div class="hamburger-menu"  style="display: none;">
+        <input id="menu__toggle" type="checkbox" name = "menuCheck" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    </div>
+    <div class = "main">
+        <div class = "msi">
+            MSI 2020
+        </div>
+
+        <div class = "search_parameters">
+            <div class = 'hey'>
+                HEY!
+            </div>
+            <div class = "hey_p">
+                Let’s try to find a joke for you: 
+            </div>
+        </div>
+
+            <div class = "form">
+                <form class = "search_form" >
+                    <div class = "random_input">
+                        <input type="radio" id ="random" name="choice_joke">
+                        <label for ="random" >Random</label>
+                    </div>
+                    <div class = "categories_input">
+                        <input type="radio" id = "categories" name = "choice_joke">
+                        <label for = "categories">Categories</label>
+                        <div class = "listCategory" style = "display: none;"></div>
+                    </div>
+                    <div class = "search_input">
+                        <input type="radio" id = "search" name = "choice_joke">
+                        <label for = "search">Search</label>
+                        <input type="text" id="search_joke" style="display: none;" placeholder="Free text search...">
+                    </div>
+
+                    <button class = "button_search">Get the joke</button>
+                </form>
+            </div>
+
+        <div class = "joke">
+
+        </div>
+    </div>
+
+    <div class = "wrapper_favourites">
+        <div class = "text_fav">Favourites</div>
+        <div class = "favourites"></div>
+    </div>
+</div>
+</body>
+<script src = "Jokes.js"></script>
+</html>
